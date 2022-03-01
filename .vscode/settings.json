@@ -12,7 +12,8 @@
         "stack": "cpp",
         "__nullptr": "cpp",
         "deque": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
