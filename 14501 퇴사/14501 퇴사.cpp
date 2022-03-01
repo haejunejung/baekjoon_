@@ -29,8 +29,6 @@ void Solution () {
     }
 }
 
-
-
 void Print () {
     cout << maximum;
 }
