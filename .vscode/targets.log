@@ -7,10 +7,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
  
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Fri Jul  1 21:55:54 2022
+# Make data base, printed on Sat Jul  2 20:43:14 2022
 
 # Variables
 
@@ -45,7 +43,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/vscode-ipc-2d1351c4-4ef0-49ef-9855-381f89a8f486.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/vscode-ipc-7cb20e4d-abea-4000-9cb7-2641dbb9767d.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -179,9 +177,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 7441365): 81 files, no impossibilities.
+# . (device 16777234, inode 7441365): 83 files, no impossibilities.
 
-# 81 files, no impossibilities in 1 directories.
+# 83 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -259,6 +257,8 @@ main.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jul  1 21:55:54 2022
+# Finished Make data base on Sat Jul  2 20:43:14 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
