@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sat Jul  2 20:43:14 2022
+# Make data base, printed on Sun Jul  3 11:26:17 2022
 
 # Variables
 
@@ -43,13 +43,13 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/vscode-ipc-7cb20e4d-abea-4000-9cb7-2641dbb9767d.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/vscode-ipc-06bd9c1f-e842-4a7e-9736-67d278e4ef1f.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /Users/junghaejune/opt/anaconda3/bin:/Users/junghaejune/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
-LaunchInstanceID = 2995F600-80FC-4721-B570-48EBA2C66627
+LaunchInstanceID = C409FF30-1D59-4F87-BAFF-7D6C31A4DFB1
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -57,7 +57,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.izuLklgHf6/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.vOY1PkWRV3/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -149,7 +149,7 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/junghaejune/opt/anaconda3/bin/python
 # environment
-SECURITYSESSIONID = 1870d
+SECURITYSESSIONID = 18774
 # automatic
 ^F = $(notdir $^)
 # default
@@ -163,7 +163,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/junghaejune/opt/anaconda3
 # environment
-VSCODE_PID = 39346
+VSCODE_PID = 23705
 # environment
 _CE_CONDA = 
 # environment
@@ -177,9 +177,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 7441365): 83 files, no impossibilities.
+# . (device 16777234, inode 7441365): 84 files, no impossibilities.
 
-# 83 files, no impossibilities in 1 directories.
+# 84 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -257,7 +257,7 @@ main.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul  2 20:43:14 2022
+# Finished Make data base on Sun Jul  3 11:26:17 2022
 
  
 make: *** No rule to make target `all'.  Stop.
