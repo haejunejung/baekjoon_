@@ -6,11 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Thu Jul  7 11:31:26 2022
+# Make data base, printed on Mon Jul 11 15:33:28 2022
 
 # Variables
 
@@ -18,8 +15,6 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -39,33 +34,25 @@ MAKEFILE_LIST :=  Makefile
 # makefile (from `Makefile', line 1)
 CXXFLAGS = -Wall -std=c++17 -pedantic -g -fsanitize=address
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/vscode-ipc-a19fe215-c977-4a22-b4b3-1953895f5dc2.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /Users/junghaejune/opt/anaconda3/bin:/Users/junghaejune/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
-LaunchInstanceID = 7BD7496F-20A3-4672-B31A-1CE68A4EAE71
-# environment
-VSCODE_LOG_STACK = false
+LaunchInstanceID = BB4B63E6-53CC-4B18-9742-AECC93FEFF0C
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Nx9NUmZgFp/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.IJEXNAspSl/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 CONDA_EXE = /Users/junghaejune/opt/anaconda3/bin/conda
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /Users/junghaejune/baekjoon_
 # environment
@@ -81,7 +68,7 @@ HOME = /Users/junghaejune
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/junghaejune/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/junghaejune/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
 LOGNAME = junghaejune
 # environment
@@ -121,7 +108,9 @@ TMPDIR = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/junghaejune/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/junghaejune/Library/Application Support/Code/1.69.0-main.sock
+# environment
+MallocNanoZone = 0
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -129,7 +118,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.19645073.19645079
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.21171551.21171557
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -151,7 +140,7 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/junghaejune/opt/anaconda3/bin/python
 # environment
-SECURITYSESSIONID = 186b2
+SECURITYSESSIONID = 186ef
 # automatic
 ^F = $(notdir $^)
 # default
@@ -165,13 +154,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/junghaejune/opt/anaconda3
 # environment
-VSCODE_PID = 557
+VSCODE_PID = 8965
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=78/1024=8%, Rehash=0, Collisions=2/103=2%
+# Load=74/1024=7%, Rehash=0, Collisions=2/99=2%
 
 # Pattern-specific Variable Values
 
@@ -179,9 +168,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777234, inode 7441365): 101 files, no impossibilities.
+# . (device 16777233, inode 7441365): 105 files, no impossibilities.
 
-# 101 files, no impossibilities in 1 directories.
+# 105 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -259,6 +248,8 @@ main.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jul  7 11:31:26 2022
+# Finished Make data base on Mon Jul 11 15:33:28 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
