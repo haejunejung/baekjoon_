@@ -6,9 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Wed Aug  3 12:43:31 2022
+# Make data base, printed on Thu Aug  4 21:38:54 2022
 
 # Variables
 
@@ -43,13 +42,13 @@ VSCODE_CWD = /
 # environment
 PATH = /Users/junghaejune/opt/anaconda3/bin:/Users/junghaejune/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
-LaunchInstanceID = 64AD8902-DB4D-48E9-B671-3EA91872D49A
+LaunchInstanceID = 86DF1145-D933-4216-AADB-C846CF9D17CD
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.wiHz2edASu/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.4iivZRLfxg/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -73,7 +72,7 @@ VSCODE_CODE_CACHE_PATH = /Users/junghaejune/Library/Application Support/Code/Cac
 # environment
 LOGNAME = junghaejune
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
@@ -100,9 +99,6 @@ USER = junghaejune
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 CONDA_SHLVL = 1
- 
-make: *** No rule to make target `all'.  Stop.
-
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
@@ -144,7 +140,7 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/junghaejune/opt/anaconda3/bin/python
 # environment
-SECURITYSESSIONID = 186b1
+SECURITYSESSIONID = 1872a
 # automatic
 ^F = $(notdir $^)
 # default
@@ -158,7 +154,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/junghaejune/opt/anaconda3
 # environment
-VSCODE_PID = 578
+VSCODE_PID = 39183
 # environment
 _CE_CONDA = 
 # environment
@@ -252,6 +248,8 @@ main.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug  3 12:43:31 2022
+# Finished Make data base on Thu Aug  4 21:38:54 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+
