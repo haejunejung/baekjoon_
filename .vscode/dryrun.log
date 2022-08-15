@@ -2,6 +2,5 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/junghaejune/baekjoon_'
 c++ -Wall -std=c++17 -pedantic -g -fsanitize=address   -c -o main.o main.cpp
 c++ -o main main.o -fsanitize=address
- 
 make: Leaving directory `/Users/junghaejune/baekjoon_'
  
