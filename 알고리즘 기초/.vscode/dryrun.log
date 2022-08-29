@@ -1,4 +1,4 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/junghaejune/baekjoon_/알고리즘 기초'
 make: Leaving directory `/Users/junghaejune/baekjoon_/알고리즘 기초'
  

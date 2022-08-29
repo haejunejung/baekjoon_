@@ -10,13 +10,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Aug  2 11:07:47 2022
+# Make data base, printed on Mon Aug 29 22:27:14 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
- 
 # automatic
 ?F = $(notdir $?)
 # automatic
@@ -44,13 +44,11 @@ VSCODE_CWD = /
 # environment
 PATH = /Users/junghaejune/opt/anaconda3/bin:/Users/junghaejune/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
-LaunchInstanceID = 64AD8902-DB4D-48E9-B671-3EA91872D49A
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.wiHz2edASu/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.KEtHpAQZdd/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -70,7 +68,7 @@ HOME = /Users/junghaejune
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/junghaejune/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/junghaejune/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = junghaejune
 # environment
@@ -99,6 +97,7 @@ USER = junghaejune
 .DEFAULT_GOAL := 
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+ 
 # environment
 CONDA_SHLVL = 1
 # default
@@ -110,7 +109,7 @@ TMPDIR = /var/folders/hg/vlzyhp4j2q5b1pqtwj06_r3w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/junghaejune/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/junghaejune/Library/Application Support/Code/1.70.2-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -120,7 +119,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.21859081.21859087
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.23138560.23138566
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -141,11 +140,8 @@ MAKEFILES :=
 LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/junghaejune/opt/anaconda3/bin/python
-# environment
-SECURITYSESSIONID = 186b1
 # automatic
 ^F = $(notdir $^)
- 
 # default
 SUFFIXES := 
 # environment
@@ -157,13 +153,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/junghaejune/opt/anaconda3
 # environment
-VSCODE_PID = 578
+VSCODE_PID = 14182
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=2/94=2%
+# Load=71/1024=7%, Rehash=0, Collisions=2/92=2%
 
 # Pattern-specific Variable Values
 
@@ -171,9 +167,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777230, inode 21977462): 10 files, no impossibilities.
+# . (device 16777234, inode 21977462): 30 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 30 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -245,6 +241,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Tue Aug  2 11:07:47 2022
+# Finished Make data base on Mon Aug 29 22:27:14 2022
 
  
