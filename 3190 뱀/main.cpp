@@ -1,3 +1,7 @@
+/* 
+    틀렸던 부분은 make_pair(A,B) 로 함수의 pair된 A,B를 받을 수 있을 것이라 생각했는데 안됐다..
+    23%에서 계속 틀렸는데, 사과를 먹으면 보드판 위치에서 사과가 없어져야하는데 없애지 않아서 틀렸다
+*/
 #include <iostream>
 #include <utility>
 #include <deque>
