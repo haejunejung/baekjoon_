@@ -1,0 +1,156 @@
+/* 모든 궁수가 한 번에 공격한다 -> 틀린 이유 어떻게 고쳐야 할 지 생각해야함 
+    -> 바로 map[y][x] = 0 으로 checking 하지 않고, 공격하는 곳의 위치를 저장해서 중복되는 곳이 있다면 한 번만 cnt--하면 해결 ?? 
+    -> 실패 ... 다시 싹 갈아엎고 다시 시작해야할 것으로 보임
+*/
+#include <iostream>
+#include <utility>
+#include <vector>
+
+using namespace std;
+
+#define enemy 1
+#define none 0
+#define archer 1
+
+int board[16][16]; /* 보드판 저장 */
+int map[16][16]; /* 배치할 때마다 보드판을 새로 저장하는 배열 */
+bool Archer[16]; /* 궁수의 위치(idx)를 저장하는 배열 */
+int N, M, D, res, totalEnemy, CntEnemy;
+vector <pair<int,int>> v;
+
+void input ()
+{
+    cin >> N >> M >> D; /* N, M, D input */
+    totalEnemy = 0; /* 총 적의 수 */
+    res = 0; /* 최대로 죽일 수 있는 적의 수 */
+
+    for (int i = 0; i < N; ++i)
+    {
+        for (int j = 0; j < M; ++j)
+        {
+            cin >> board[i][j];
+            if (board[i][j]) totalEnemy += 1; 
+        }
+    }
+}
+
+void moveMap (int num) /* 한 턴이 지나갈 때마다 map 옮기기 */
+{
+    if (num == 0) return; /* num == 0은 처음을 의미하므로, 움직이지 않는다 */
+
+    for (int i = N-1; i >= num; --i)
+    {
+        for (int j = 0; j < M; ++j)
+        {
+            map[i][j] = map[i-1][j];
+        }
+    }
+}
+
+void howtokill (int archerX, int archerY, int x, int y, int dis) /* 적을 발견하는 방법 */
+{
+    if (CntEnemy == 0) return; /* 모든 적을 제거하였을 때 종료 */
+    if (x < 0 || y < 0 || x >= M || y >= N) return; /* map 밖으로 벗어날 때 종료 */
+    if (abs(archerX-x) + abs(archerY-y) != dis || abs(archerX-x) + abs(archerY-y) > D) return; /* 거리가 D보다 크거나, 내가 원하는 distance가 아닐 때 종료 */
+
+    if (map[y][x] == 1) /* 현 위치에 적이 있다면 제거 */
+    {
+        v.push_back(make_pair(y,x));
+        CntEnemy--;
+        return;
+    }
+
+    dis++; /* 현재 distance에 적이 없으므로, dis 한 개 늘려서 탐색 */
+    int flag = CntEnemy; /* 적을 찾았는지 안했는지 체크하기 위한 flag */
+    for (int i = 1; i <= 3; ++i)
+    {
+        if (i == 1) howtokill (archerX, archerY, x-1, y, dis); /* 왼쪽부터 적을 제거한다고 하여서 왼쪽, 위쪽, 오른쪽 순으로 탐색 */
+        else if (i == 2) howtokill (archerX, archerY, x, y-1, dis);
+        else if (i == 3) howtokill (archerX, archerY, x+1, y, dis);
+
+        if (flag != CntEnemy) return;
+    }
+
+}
+
+void kill () /* 궁수의 위치 확인 후, 적 제거 */
+{
+    for (int i = 0; i < M; ++i)
+    {
+        if (Archer[i]) /* 해당 위치에 궁수가 있다면 */
+        {
+            howtokill (i, N, i, N-1, 1); /* 적이 있으면 죽일 것이다 */
+        }
+    }
+
+    for (int i = 0; i < v.size(); ++i)
+    {
+        map[v[i].first][v[i].second] = 0;
+    }
+
+    int common = 0;
+    for (int i = 0; i < v.size()-1; ++i)
+    {
+        for (int j = i+1; j < v.size(); ++j)
+        {
+            if (v[i].first == v[j].first && v[i].second == v[j].second) common++;
+        }
+    }
+    CntEnemy += common;
+
+    v.clear();
+}
+
+void solution ()
+{
+    CntEnemy = totalEnemy; /* 적의 명수 체크 */
+
+    for (int i = 0; i < N; ++i) /* N번 맵을 바꾸게 된다 */
+    {
+        moveMap (i);
+        kill ();
+    }
+
+    res = max (res, totalEnemy - CntEnemy); /* totalEnemy - CntEnemy => NumKill */
+}
+
+void dfs (int cntArcher, int pos)
+{
+    if (cntArcher == 3)
+    {
+        for (int i = 0; i < N; ++i)
+        {
+            for (int j = 0; j < M; ++j)
+            {
+                map[i][j] = board[i][j];
+            }
+        }
+        solution (); /* 궁수가 3명이면 제거할 수 있는 적의 최대 수 계산 */
+        return;
+    }
+
+    for (int i = pos; i < M; ++i) /* i는 아처의 위치 */
+    {
+        if (!Archer[i])
+        {
+            Archer[i] = archer; /* 아처인지 확인할 수 있도록 배열에 투입 */
+            dfs (cntArcher+1, i+1);
+            Archer[i] = none; /* 확인한 후에 아처를 옮기기 위해서 없애줌 */
+        }
+    }
+}
+
+int main (void)
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    input ();
+
+    dfs (0,0);
+
+    cout << res;
+
+    return 0;
+}
