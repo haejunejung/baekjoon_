@@ -68,7 +68,8 @@
         "optional": "cpp",
         "iomanip": "cpp",
         "deque": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "두 큐 합 같게 만들기": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
