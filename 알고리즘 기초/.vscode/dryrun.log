@@ -1,6 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/junghaejune/baekjoon_/알고리즘 기초'
-make: Leaving directory `/Users/junghaejune/baekjoon_/알고리즘 기초'
- 
-make: *** No targets specified and no makefile found.  Stop.
-
