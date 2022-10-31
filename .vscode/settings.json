@@ -69,7 +69,8 @@
         "iomanip": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "두 큐 합 같게 만들기": "cpp"
+        "두 큐 합 같게 만들기": "cpp",
+        "list": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
