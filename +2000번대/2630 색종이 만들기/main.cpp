@@ -5,12 +5,12 @@ int N, blue, white;
 
 bool check(int fx, int fy, int lx, int ly)
 {
-    bool flag = board[fx][fy];
+    bool flag = board[fy][fx];
     for (int sy = fy; sy <= ly; ++sy)
     {
         for (int sx = fx; sx <= lx; ++sx)
         {
-            if (flag != board[sx][sy])
+            if (flag != board[sy][sx])
                 return false;
         }
     }
@@ -19,11 +19,19 @@ bool check(int fx, int fy, int lx, int ly)
 
 void partition(int fx, int fy, int lx, int ly)
 {
+    if (fx == lx && fy == ly)
+    {
+        if (board[fy][fx] == 1)
+            blue++;
+        else
+            white++;
+        return;
+    }
     if ((fx < lx) && (fy < ly))
     {
         if (check(fx, fy, lx, ly))
         {
-            if (board[fx][fy] == 1)
+            if (board[fy][fx] == 1)
                 blue++;
             else
                 white++;
@@ -37,16 +45,6 @@ void partition(int fx, int fy, int lx, int ly)
         partition(mx + 1, fy, lx, my);
         partition(fx, my + 1, mx, ly);
         partition(mx + 1, my + 1, lx, ly);
-    }
-
-    if (check(fx, fy, lx, ly))
-    {
-        if (board[fx][fy] == 1)
-            blue++;
-        else
-            white++;
-
-        return;
     }
 }
 
